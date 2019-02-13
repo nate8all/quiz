@@ -15,8 +15,12 @@ body {
 }
 
 .SpiritAnimalPic {
-    width: 50%;
-    height:50%;
+    width: 75%;
+    height:25%;
+}
+#spirit {
+    display: flex;
+    justify-content: center;
 }
 
 #caption {
@@ -26,6 +30,7 @@ body {
 #nateImg {
     border-radius: 50%;
     width: 50px;
+    height:60px;
 }
 
 a {
