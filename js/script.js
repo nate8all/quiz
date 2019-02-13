@@ -1,7 +1,7 @@
 /* global $ */
 
 $(document).ready(function() {
-    $(".click").click(function() {
+    $("#click").click(function() {
         var spiritAnimal = "TBD";
         var imgSrc = "https://spiritanimals.scholastic.com/assets/spiritanimals/landing/logo-b0b83afaa952bed75631a3433b4fcc7c.png";
         var name = $("#question1").val(); //this is q1
@@ -37,7 +37,6 @@ $(document).ready(function() {
         //score1 + score2 + score3 + score4 + score5;
 
         total(totalScore,spiritAnimal);
-        
     });
 });
         
@@ -137,28 +136,28 @@ function quest5(answer){
 function total(score, animal) {
     if (score <= 15) {
         animal = "Duck";
-        $(".result").html("<img src=\"https://cdn.vox-cdn.com/thumbor/Wd-2zsFlWxXz1HgmGEEwXx5iYBI=/0x0:1000x605/1200x800/filters:focal(420x223:580x383)/cdn.vox-cdn.com/uploads/chorus_image/image/48780381/duck.0.png\">");
+        $(".result").html("<img id='resultphoto' src=\"https://cdn.vox-cdn.com/thumbor/Wd-2zsFlWxXz1HgmGEEwXx5iYBI=/0x0:1000x605/1200x800/filters:focal(420x223:580x383)/cdn.vox-cdn.com/uploads/chorus_image/image/48780381/duck.0.png\">");
         //$("img").attr("src", "https://cdn.vox-cdn.com/thumbor/Wd-2zsFlWxXz1HgmGEEwXx5iYBI=/0x0:1000x605/1200x800/filters:focal(420x223:580x383)/cdn.vox-cdn.com/uploads/chorus_image/image/48780381/duck.0.png");
         $(".result").append("<h1>Your Spirit Animal is the " + animal + "!</h1>");
         $(".result").append("<h3>Don't be too bummed. The duck is often seen to symbolize freedom, as well as high values and admirable since they posses many skills, like swimming and flying.</h3>");
     }
     else if (score > 15 && score <= 30) {
         animal = "Dolphin";
-        $(".result").html("<img src=\"https://www.dolphindiscovery.com/imagesNuevo/imgsLocs/anguilla/anguilla-9.jpg?v=7.8.16\">");
+        $(".result").html("<img id='resultphoto' src=\"https://www.dolphindiscovery.com/imagesNuevo/imgsLocs/anguilla/anguilla-9.jpg?v=7.8.16\">");
         //$("img").attr("src", "https://www.dolphindiscovery.com/imagesNuevo/imgsLocs/anguilla/anguilla-9.jpg?v=7.8.16");
         $(".result").append("<h1>Your Spirit Animal is the " + animal + "!</h1>");
         $(".result").append("<h3>Dolphins are known to be gentle, calming, smooth and easy-going. That must be the type of person you are!</h3>");
     }
     else if (score > 30 && score <= 45) {
         animal = "Elephant";
-        $(".result").html("<img src=\"https://www.futurity.org/wp/wp-content/uploads/2018/08/elephant-close-up_1600.jpg\">");
+        $(".result").html("<img id='resultphoto' src=\"https://www.futurity.org/wp/wp-content/uploads/2018/08/elephant-close-up_1600.jpg\">");
         //$("img").attr("src", "ttps://www.futurity.org/wp/wp-content/uploads/2018/08/elephant-close-up_1600.jpg");
         $(".result").append("<h1>Your Spirit Animal is the " + animal + "!</h1>");
         $(".result").append("<h3>According to other online sources, the elephant usually symbolizes strength, stability, honor, and perserverance. Go you!</h3>");
     }
     else if (score > 45 && score <= 60) {
         animal = "Lion, King of the Jungle";
-        $(".result").html("<img src=\"https://www.gannett-cdn.com/presto/2018/10/19/PIND/17898f77-71af-484e-b39f-df4c132c47fd-Nyack.jpg?crop=1395,778,x0,y367&width=3200&height=1680&fit=bounds\">");
+        $(".result").html("<img id='resultphoto' src=\"https://www.gannett-cdn.com/presto/2018/10/19/PIND/17898f77-71af-484e-b39f-df4c132c47fd-Nyack.jpg?crop=1395,778,x0,y367&width=3200&height=1680&fit=bounds\">");
         //$("img").attr("src", "https://www.gannett-cdn.com/presto/2018/10/19/PIND/17898f77-71af-484e-b39f-df4c132c47fd-Nyack.jpg?crop=1395,778,x0,y367&width=3200&height=1680&fit=bounds");
         $(".result").append("<h1>Your Spirit Animal is the " + animal + "!</h1>");
         $(".result").append("<h3>In terms of being a spirit animal, a lion can represent strength, assertiveness, might, courage, justice, and many ohers. et out that lion!</h3>");

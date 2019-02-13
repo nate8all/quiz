@@ -18,6 +18,10 @@ body {
     width: 75%;
     height:25%;
 }
+#resultphoto {
+    width: 50%;
+    height: 20%;
+}
 #spirit {
     display: flex;
     justify-content: center;
